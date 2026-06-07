@@ -1,0 +1,16 @@
+laptopID,Company,Product,TypeName,Inches,ScreenResolution,Cpu,Ram,Gpu,OpSys,Weight,Price
+1,Apple,MacBook Air M5,Ultrabook,13.6,2560x1664,Apple M5,16GB,Integrated,macOS,2.7,1099
+2,Apple,MacBook Pro 14 M5 Pro,Workstation,14.2,3024x1964,Apple M5 Pro,24GB,Integrated,macOS,3.4,1999
+3,Lenovo,Yoga 7i,2-in-1,14,2880x1800 OLED,Intel Core Ultra 7,16GB,Integrated,Windows 11,3.1,749
+4,Dell,XPS 13,Ultrabook,13.4,2880x1800,Intel Core Ultra 5,16GB,Integrated,Windows 11,2.6,1099
+5,ASUS,Zenbook S 14,Ultrabook,14,2880x1800 OLED,Intel Core Ultra 7,32GB,Integrated,Windows 11,2.8,1499
+6,HP,OmniBook 5,Notebook,14,1920x1200 OLED,Snapdragon X Plus,16GB,Integrated,Windows 11,3.0,899
+7,Lenovo,Legion Slim 5,Gaming,16,2560x1600 165Hz,AMD Ryzen 7 AI,16GB,RTX 5060,Windows 11,4.2,1199
+8,Acer,Nitro V 16,Gaming,16,1920x1200 165Hz,AMD Ryzen 7,16GB,RTX 5050,Windows 11,5.5,629
+9,Microsoft,Surface Laptop 7,Ultrabook,13.8,2304x1536,Snapdragon X,16GB,Integrated,Windows 11,2.9,1299
+10,ASUS,ROG Zephyrus G14,Gaming,14,2880x1800 120Hz,AMD Ryzen 9 AI,32GB,RTX 5070,Windows 11,3.3,1899
+11,HP,Pavilion 15,Notebook,15.6,1920x1080,AMD Ryzen 5,16GB,Integrated,Windows 11,3.8,549
+12,Dell,Inspiron 14,Notebook,14,1920x1200,Intel Core Ultra 7,16GB,Integrated,Windows 11,3.2,899
+13,Lenovo,IdeaPad Slim 3,Notebook,15.6,1920x1080,AMD Ryzen 5,8GB,Integrated,Windows 11,3.5,429
+14,Acer,Swift Go 14,Ultrabook,14,2880x1800 OLED,Intel Core Ultra 7,16GB,Integrated,Windows 11,2.9,849
+15,MSI,Cyborg 15,Gaming,15.6,1920x1080 144Hz,Intel Core i7,16GB,RTX 4050,Windows 11,4.1,699
