@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Predictor</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+
+        .wrapper{
+            width:700px;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 20px rgba(0,0,0,.15);
+        }
+
+        .title{
+            text-align:center;
+            font-size:30px;
+            font-weight:bold;
+            margin-bottom:25px;
+        }
+
+        form{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:15px;
+        }
+
+        .full{
+            grid-column:1/3;
+        }
+
+        label{
+            display:block;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        input,select{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        button{
+            grid-column:1/3;
+            padding:12px;
+            background:#007bff;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0056b3;
+        }
+
+        .result{
+            margin-top:20px;
+            text-align:center;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="title">
+        💻 Laptop Price Predictor
+    </div>
+
+    <form action="/" method="POST">
+
+        <div>
+            <label>RAM (GB)</label>
+            <input type="number" name="Ram" required>
+        </div>
+
+        <div>
+            <label>Weight (kg)</label>
+            <input type="number" step="0.01" name="Weight" required>
+        </div>
+
+        <div>
+            <label>Touchscreen</label>
+            <select name="Touchscreen">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div>
+            <label>IPS Display</label>
+            <select name="Ips">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div>
+            <label>SSD (GB)</label>
+            <input type="number" name="SSD" value="0">
+        </div>
+
+        <div>
+            <label>HDD (GB)</label>
+            <input type="number" name="HDD" value="0">
+        </div>
+
+        <div>
+            <label>Hybrid (GB)</label>
+            <input type="number" name="Hybrid" value="0">
+        </div>
+
+        <div>
+            <label>Flash Storage (GB)</label>
+            <input type="number" name="Flash_Storage" value="0">
+        </div>
+
+        <div>
+            <label>Company</label>
+            <select name="Company">
+                <option>Acer</option>
+                <option>Apple</option>
+                <option>Asus</option>
+                <option>Dell</option>
+                <option>HP</option>
+                <option>Lenovo</option>
+                <option>MSI</option>
+                <option>Toshiba</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Type</label>
+            <select name="TypeName">
+                <option>Notebook</option>
+                <option>Ultrabook</option>
+                <option>Gaming</option>
+                <option>Netbook</option>
+                <option>2 in 1 Convertible</option>
+                <option>Workstation</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Operating System</label>
+            <select name="OpSys">
+                <option>Windows</option>
+                <option>Linux</option>
+                <option>Mac</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label>CPU</label>
+            <select name="cpu_name">
+                <option>Intel Core i3</option>
+                <option>Intel Core i5</option>
+                <option>Intel Core i7</option>
+                <option>AMD</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="full">
+            <label>GPU</label>
+            <select name="gpu_name">
+                <option>Intel</option>
+                <option>Nvidia</option>
+                <option>AMD</option>
+            </select>
+        </div>
+
+        <button type="submit">
+            Predict Price
+        </button>
+
+    </form>
+
+    <!-- Flask/Jinja -->
+    <!--
+    <div class="result">
+        Predicted Price: Rs. {{ prediction }}
+    </div>
+    -->
+
+</div>
+
+</body>
+</html>
